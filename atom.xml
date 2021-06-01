@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangqk8888.github.io</id>
     <title>寅 亮</title>
-    <updated>2021-05-29T03:01:03.145Z</updated>
+    <updated>2021-06-01T13:44:33.962Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangqk8888.github.io"/>
     <link rel="self" href="https://zhangqk8888.github.io/atom.xml"/>
@@ -55,6 +55,17 @@
     <icon>https://zhangqk8888.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 寅 亮</rights>
     <entry>
+        <title type="html"><![CDATA[随笔]]></title>
+        <id>https://zhangqk8888.github.io/post/sui-bi/</id>
+        <link href="https://zhangqk8888.github.io/post/sui-bi/">
+        </link>
+        <updated>2021-06-01T13:42:47.000Z</updated>
+        <summary type="html"><![CDATA[<p><a href="https://www.zhihu.com/question/462169322/answer/1915124126">北大数学天才韦东奕手拿馒头矿泉水受访，他在数学领域取得了哪些成就？给我们哪些启示？ - 密斯特岗的回答 - 知乎</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://www.zhihu.com/question/462169322/answer/1915124126">北大数学天才韦东奕手拿馒头矿泉水受访，他在数学领域取得了哪些成就？给我们哪些启示？ - 密斯特岗的回答 - 知乎</a></p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Gittalk如何搭建]]></title>
         <id>https://zhangqk8888.github.io/post/gittalk-ru-he-da-jian/</id>
         <link href="https://zhangqk8888.github.io/post/gittalk-ru-he-da-jian/">
@@ -81,12 +92,5 @@
         <link href="https://zhangqk8888.github.io/post/jian-chi-bu-xia-qu-jiu-lai-kan-kan/">
         </link>
         <updated>2021-05-27T12:11:41.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[解决Gridea打开卡顿]]></title>
-        <id>https://zhangqk8888.github.io/post/jie-jue-gridea-da-kai-qia-dun/</id>
-        <link href="https://zhangqk8888.github.io/post/jie-jue-gridea-da-kai-qia-dun/">
-        </link>
-        <updated>2021-05-27T12:11:19.000Z</updated>
     </entry>
 </feed>
