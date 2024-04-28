@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhangqk8888.github.io</id>
+    <title>寅 亮</title>
+    <updated>2024-04-28T03:23:26.012Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhangqk8888.github.io"/>
+    <link rel="self" href="https://zhangqk8888.github.io/atom.xml"/>
+    <subtitle>斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。&lt;br&gt;
+&lt;script&gt;
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second &gt;= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second &gt;= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second &gt;= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second &gt;= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second &gt; 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&gt;
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + &apos;年&apos; + currentTime[1] + &apos;天&apos;
+                + currentTime[2] + &apos;时&apos; + currentTime[3] + &apos;分&apos; + currentTime[4]
+                + &apos;秒&apos;;
+        document.getElementById(&quot;htmer_time&quot;).innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+&lt;/script&gt;
+   运行时间：&lt;span id=&quot;htmer_time&quot; style=&quot;color: red;&quot;&gt;&lt;/span&gt;</subtitle>
+    <logo>https://zhangqk8888.github.io/images/avatar.png</logo>
+    <icon>https://zhangqk8888.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, 寅 亮</rights>
+    <entry>
+        <title type="html"><![CDATA[读博士是一种怎样的人生体验？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/du-bo-shi-shi-yi-chong-zen-yang-de-ren-sheng-ti-yan-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/du-bo-shi-shi-yi-chong-zen-yang-de-ren-sheng-ti-yan-zhi-hu/">
+        </link>
+        <updated>2024-04-28T03:20:14.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Happy new review online！]]></title>
+        <id>https://zhangqk8888.github.io/post/happy-new-review-online/</id>
+        <link href="https://zhangqk8888.github.io/post/happy-new-review-online/">
+        </link>
+        <updated>2024-04-23T13:17:17.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有一个好妈妈是一种什么样的体验？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/you-yi-ge-hao-ma-ma-shi-yi-chong-shi-me-yang-de-ti-yan-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/you-yi-ge-hao-ma-ma-shi-yi-chong-shi-me-yang-de-ti-yan-zhi-hu/">
+        </link>
+        <updated>2023-10-30T07:29:27.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[穷可以让一个男人自卑到什么程度？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/qiong-ke-yi-rang-yi-ge-nan-ren-zi-bei-dao-shi-me-cheng-du-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/qiong-ke-yi-rang-yi-ge-nan-ren-zi-bei-dao-shi-me-cheng-du-zhi-hu/">
+        </link>
+        <updated>2023-10-20T05:02:36.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 中年男人在想什么？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/zhong-nian-nan-ren-zai-xiang-shi-me-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/zhong-nian-nan-ren-zai-xiang-shi-me-zhi-hu/">
+        </link>
+        <updated>2023-09-19T03:42:21.000Z</updated>
+    </entry>
+</feed>
