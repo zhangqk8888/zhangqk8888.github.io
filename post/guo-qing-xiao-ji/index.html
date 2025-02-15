@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>国庆小记 | 寅 亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangqk8888.github.io/favicon.ico?v=1739619415746">
+<link rel="stylesheet" href="https://zhangqk8888.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="距离上次又过去了许久。照例随缘更新。
+经过快一个月的高强度上课，新的知识学习甚少，反而手机和电脑摸鱼学会了。
+尤其发现，这边上课基本上都是pad和电脑，没人愿意带纸质书籍。所以养成了大家抢最后一排，无事低头玩手机的局面。尤其是英语课，基本上..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangqk8888.github.io">
+        <img src="https://zhangqk8888.github.io/images/avatar.png?v=1739619415746" class="site-logo">
+        <h1 class="site-title">寅 亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhangqk8888" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhang-kun-95-89" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。<br>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+   运行时间：<span id="htmer_time" style="color: red;"></span>
+    </div>
+    <div class="site-footer">
+      
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangqk8888.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">国庆小记</h2>
+            <div class="post-date">2021-10-03</div>
+            
+            <div class="post-content" v-pre>
+              <p>距离上次又过去了许久。照例随缘更新。<br>
+经过快一个月的高强度上课，新的知识学习甚少，反而手机和电脑摸鱼学会了。<br>
+尤其发现，这边上课基本上都是pad和电脑，没人愿意带纸质书籍。所以养成了大家抢最后一排，无事低头玩手机的局面。尤其是英语课，基本上听的人就太少了。<br>
+反而我发现我去听的讲座学习了一些新的知识，那是个关于文献搜索的webofscience讲座。本身讲座并没有比其他讲座有某些新的知识点。我在本科期间就听说webofscience拥有自己的引文搜索功能，而且极其强大。那天听说后，我测试了下，的确好用。它在我看到文献时告诉我引用量，文献所属分区，并且告诉最新的IF分数，这可以有助于我寻找最新的高质量文章。<br>
+更有用的是，他介绍了一个新插入文献的方式。就是用endnote online， 我之前竟然不知道endnote和webofscience是一家公司的产品。随后，我测试了下，endnoteonline 和webofscience竟然没法共用同一个账号。反而endnote可以和webofscience可以公用。<br>
+最近也需要努力肝文章！</p>
+<!-- more -->
+<p>It has been a long time since last time.<br>
+After nearly a month of intensive classes, the new knowledge to learn little, but mobile phones and computers to learn the fish.<br>
+In particular, classes here are mostly pad and computer, and no one wants to bring paper books. That’s why we’re fighting for the last row and playing with our phones. English class, in particular, is generally attended by too few people.<br>
+Instead, I found that the lecture I attended, the webofscience lecture on literature search, had learned something new. The lecture itself did not have some new points of knowledge compared with other lectures. I heard as an undergraduate that webofscience has its own citation search feature, and it’s extremely powerful. When I heard about it the other day, I tested it, and it worked. It tells me the number of citations when I see the document, the partition to which the document belongs, and the latest IF score, which can help me find the latest high-quality articles.<br>
+More usefully, he introduces a new way of inserting literature. Using endnote online, I had no idea that endnote and webofscience were the same company. Then I tested that note online and webofscience couldn’t share the same account. Instead, endnote can be shared with webofscience.<br>
+Also need to work hard recently liver article!</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangqk8888.github.io/post/du-kang-de-you-gan/">
+                  <h3 class="post-title">
+                    读 康德 有感
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'b45ddd1dbf5b31282ae7',
+        clientSecret: 'fe982a8228b1f37b8d0dc6603fa76a2619b4ac6a',
+        repo: 'zhangqk8888.github.io',
+        owner: 'zhangqk8888',
+        admin: ['zhangqk8888'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

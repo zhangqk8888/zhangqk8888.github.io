@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>寅 亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangqk8888.github.io/favicon.ico?v=1739619415746">
+<link rel="stylesheet" href="https://zhangqk8888.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。&lt;br&gt;
+&lt;script&gt;
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second &gt;= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second &gt;= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second &gt;= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second &gt;= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second &gt; 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; language=&#34;javascript&#34;&gt;
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + &#39;年&#39; + currentTime[1] + &#39;天&#39;
+                + currentTime[2] + &#39;时&#39; + currentTime[3] + &#39;分&#39; + currentTime[4]
+                + &#39;秒&#39;;
+        document.getElementById(&#34;htmer_time&#34;).innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+&lt;/script&gt;
+   运行时间：&lt;span id=&#34;htmer_time&#34; style=&#34;color: red;&#34;&gt;&lt;/span&gt;">
+    
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangqk8888.github.io">
+        <img src="https://zhangqk8888.github.io/images/avatar.png?v=1739619415746" class="site-logo">
+        <h1 class="site-title">寅 亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhangqk8888" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhang-kun-95-89" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。<br>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+   运行时间：<span id="htmer_time" style="color: red;"></span>
+    </div>
+    <div class="site-footer">
+      
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangqk8888.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://zhangqk8888.github.io/post/jiu-wei-de-ju-xing/">
+                  <h2 class="post-title">久违的句型</h2>
+                </a>
+                <div class="post-date">
+                  2021-10-25
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://zhangqk8888.github.io/post/jia-ju-ou-de/">
+                  <h2 class="post-title">佳句偶的</h2>
+                </a>
+                <div class="post-date">
+                  2021-10-21
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://zhangqk8888.github.io/post/chen-si/">
+                  <h2 class="post-title">晨思</h2>
+                </a>
+                <div class="post-date">
+                  2021-10-16
+                </div>
+                <div class="post-abstract">
+                  </div>
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=227538725&aid=371818532&page=1&as_wide=1&high_quality=1&danmaku=1" frameborder="no" scrolling="no"></iframe>
+</div>
+<p>Down by the Salley garden</p>
+<p>William Butler Yeats</p>
+<p>Down by the Salley Gardens</p>
+<p>My love and I did meet [1]</p>
+<p>She passed the Salley Gardens</p>
+<p>With little snow-white [2] feet</p>
+<p>She bid [3] me take love easy [4]</p>
+<p>As the leaves grow on the tree</p>
+<p>But I being young and foolish</p>
+<p>With her did not agree</p>
+<p>In a field by the river [5]</p>
+<p>My love and I did stand</p>
+<p>And on my leaning [6] shoulder</p>
+<p>She laid her snow-white hand</p>
+<p>She bid me take life easy</p>
+<p>As the grass grows on the weirs [7]</p>
+<p>But I was young and foolish</p>
+<p>And now am full of tears<br>
+注释：</p>
+<p>[1] did meet: 用did加meet的方式代替过去时met，强调了‘我’与爱人曾经相遇这一段经历；</p>
+<p>[2] snow-white: 如雪一样白的；</p>
+<p>[3] bid sb do sth: 吩咐，命令某人做某事；</p>
+<p>[4] take love easy: 从容地去爱；</p>
+<p>[5] by the river: 在河边；</p>
+<p>[6] leaning shoulder: 倾斜的肩膀；</p>
+<p>[7] weir: 河堰；</p>
+<p>《在柳园那边》</p>
+<p>威廉·巴特勒·叶芝</p>
+<p>在柳园那边，我和我爱曾经遇见；</p>
+<p>她走过柳园，踩着雪白的小脚。</p>
+<p>她叫我对爱情放轻松，像树上生长的柳条；</p>
+<p>但我太年轻太傻，无法同意她的话。</p>
+<p>在河边的草地，我和我爱曾经并肩而立，</p>
+<p>在我斜斜的肩膀，她搁过雪白的小手。</p>
+<p>她叫我对生活放轻松，像河堰上生长的青草；</p>
+<p>但我那时太年轻太傻，如今只有满眼泪水。</p>
+<p>《在柳园》，算是我当年比较喜爱的外国诗歌。因为中文的诗歌甚多，导致我对诗歌的对仗、结构、韵律等有高度的要求。而很多外国诗歌仅仅能有韵律，无形体完美。所以听的很少。而在柳园，颇有《再别康桥》的那种韵味。<br>
+叶芝，早年间我以为是一位中世纪的诗人。和梭罗一样的田园归客。<br>
+事实上，发现叶芝竟然是近代的一位优秀诗人。很难想象在那个年代还能心怀理想，写下诗句。留下了甚多的优秀诗篇。而这篇应该在叶芝的诗文中也是前列的几首之一。</p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://zhangqk8888.github.io/post/lao-shi-gao-xiao-yu-lu/">
+                  <h2 class="post-title">老师搞笑语录</h2>
+                </a>
+                <div class="post-date">
+                  2021-10-14
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://zhangqk8888.github.io/post/hai-tang-wu-xiang-er-yue-mai-miao/">
+                  <h2 class="post-title">海棠无香  二月麦苗</h2>
+                </a>
+                <div class="post-date">
+                  2021-10-14
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+    <a href="https://zhangqk8888.github.io/page/13/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
+  
+  
+    <a href="https://zhangqk8888.github.io/page/15/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>曲终人散 | 寅 亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangqk8888.github.io/favicon.ico?v=1739619415746">
+<link rel="stylesheet" href="https://zhangqk8888.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="故事的开始，来自一间破屋子。屋内住了一个热心肠的盲人，虽说是盲人，但依稀还能看出形状、大小和颜色。
+盲人平时也就做着砍柴、烧水、做饭这一系列简单的事情，村子里偶尔农忙时机也去帮周边邻居。盲人眼瞎但心底不坏，就是那双眼睛阻隔了他的范围。这样，..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangqk8888.github.io">
+        <img src="https://zhangqk8888.github.io/images/avatar.png?v=1739619415746" class="site-logo">
+        <h1 class="site-title">寅 亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhangqk8888" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhang-kun-95-89" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。<br>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+   运行时间：<span id="htmer_time" style="color: red;"></span>
+    </div>
+    <div class="site-footer">
+      
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangqk8888.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">曲终人散</h2>
+            <div class="post-date">2021-11-14</div>
+            
+            <div class="post-content" v-pre>
+              <p>故事的开始，来自一间破屋子。屋内住了一个热心肠的盲人，虽说是盲人，但依稀还能看出形状、大小和颜色。</p>
+<p>盲人平时也就做着砍柴、烧水、做饭这一系列简单的事情，村子里偶尔农忙时机也去帮周边邻居。盲人眼瞎但心底不坏，就是那双眼睛阻隔了他的范围。这样，大家一来二去，也就叫他盲人，把他具体的名字给忘了。</p>
+<p>盲人也知道，自己这辈子应该就只会在村落里溜达，因为都是熟悉的地方，他也乐的四处闲逛。虽然眼神不好，但他的耳朵灵敏，能听出很多村落里都听不到的声音。而且他特别喜欢听到鸟叫，各种鸟叫：麻雀、布谷鸟、杜鹃……可惜，村落里常见的就只有这些普通的鸟儿。</p>
+<p>日子慢慢过，每天重复着昨天的故事。直到这份平静被打破：村落的后山里出现了一只金丝雀的声音。盲人也不知道她叫金丝雀，这个名字还是村长拿着话本告诉他的。盲人那天在后山闲逛，光线强，而且听到了不一样的鸟叫声。他就凑过去，发现一只从来没见过的鸟儿出现在他面前。可他看不见，慢慢伸手。鸟儿也不知道是不是也知道盲人是个热心肠的人，竟然没有动弹，只是弱弱地叫唤了几声。盲人对着光摸了摸鸟儿，感觉鸟儿的翅膀受伤了，具体不知。盲人立马脱下衣物放进身后的背篓里，把鸟儿放进去。等到了村长家，村长拿着画册说这是金丝雀，翅膀好像是飞行时撞伤了。</p>
+<p>简单包扎后，金丝雀就正式入住了盲人的家。盲人也乐的舒坦，终于可以听到不一样的鸟叫声。早上金丝雀叫他起床，之后两人兵分两路。金丝雀在周围练习飞行，盲人外出砍柴……日子一点点过，时间来到了三个月后，这三个月几乎每天都在重复昨天的故事。唯一不同的是第一个月时，金丝雀在盲人洗脸时，往脸盆里扔进去几株草。开始盲人以为金丝雀估计拿这个和他开玩笑。就一遍遍地从脸盆里拿出来，可金丝雀每次都扔回去，且叫的声音越来越大。盲人猜测金丝雀可能是找到了治疗眼疾的草药，于是也就洗脸的时候加上。三个月金丝雀越来越健康，羽翼光泽提升。盲人很高兴，不光是金丝雀变好看了，而他能分辨出金丝雀光泽度提升，那说明自己的视力也在提升。</p>
+<p>平静是用来打破的。某天夜里，盲人听到外面有人开门，并且听到嘀咕说偷鸟。盲人赶紧给金丝雀发信号，推开房顶的瓦片，让金丝雀逃走。金丝雀惊吓中也就仓惶逃走。一会儿那个人没偷到金丝雀也就离开了。</p>
+<p>自从金丝雀离开，盲人就陷入了低迷期。一方面觉得自己如果不是盲人，那天金丝雀就不必离开；另一方面，觉得自己多年的好心竟然还有人来偷盗。可日子还是普普通通的过去，每天重复着昨天的无聊。</p>
+<p>某天无聊的下午，一堆学生拥簇着一个长者来到村落。他们是来采集各种声音的音乐学院的学生。盲人饶有兴致地听着长者给学生上课，这可比砍柴有意思多了。说到后面学生都开始模仿刚刚听到的声音……长者看到了盲人，觉得很有趣。问他，刚刚聊的能听懂吗。盲人表示理论不是太懂，但是后面模仿鸟叫还是会的，因为他听了很多年。并现场给长者来了一段各种鸟儿的声音……长者和学生对其能惟妙惟肖地模仿那么多的鸟声表示惊讶，而且长者发觉盲人的绝对音感很强，不亚于学院里的那些“怪物们”。于是建议盲人和他一起回城里。盲人表示自己虽然是一个人无牵无挂，但这么多年没出去过，加上眼疾，出门的难度更大。</p>
+<p>长者和盲人聊了很久，让盲人开始向往城里。于是他告别村长，随着长者来到了城里。从最基础的发声开始练习……三个月后，年终了。院里组织了一场音乐会，邀请了达官贵族和其他音乐学院的老师。长者也塞给盲人一张票，让他好好放松这些天的辛苦。盲人进门后找了个偏僻的角落，喝着手中不知名的液体，比自己家酿更加冲鼻。突然他听到了一声熟悉的鸟叫，他转过头，发现刚进门的一位贵人肩膀上有只金丝雀。特别熟悉的感觉，好像！金丝雀在肩膀上又叫了一下，这次盲人确信是那只曾经和自己呆满三个月的金丝雀。那一瞬间突然脑子充血，盲人想上去叫住金丝雀。但他起身时，突然觉得不太合适，自己现在更加无法和那位贵人相比。于是盲人目送金丝雀远去。自己的胃里被手里那种冲鼻的液体灌得愈发胀肚……后续是长者和学生说的，说盲人昨晚不停地灌自己酒，然后眼角的泪水就没停下，嘴里偶尔还发出鸟叫。具体是不是就不知道了，因为那时候盲人已经喝大了，声音变调。</p>
+<p>盲人撒谎说自己听到的曲子让自己感动，但学生都说昨晚的曲调是激情豪迈的曲子。盲人打个马哈哈就过去了……</p>
+<p>你问我后续？故事到这该停了，回村落砍柴？继续呆在音乐学院？谁知道呢？</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangqk8888.github.io/post/shua-zhi-hu-suo-de/">
+                  <h3 class="post-title">
+                    刷知乎所得
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'b45ddd1dbf5b31282ae7',
+        clientSecret: 'fe982a8228b1f37b8d0dc6603fa76a2619b4ac6a',
+        repo: 'zhangqk8888.github.io',
+        owner: 'zhangqk8888',
+        admin: ['zhangqk8888'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

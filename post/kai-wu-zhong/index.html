@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>开悟中 | 寅 亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangqk8888.github.io/favicon.ico?v=1739619415746">
+<link rel="stylesheet" href="https://zhangqk8888.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="我原来在大一觉得自己已经悟出人生的道理，大三的那次冥想让我悟出了新的东西。
+当我大三觉得自己已经透彻人生，最近我又悟出了新的道理。
+当年的粪土激昂，不过是我的一种偏见，可能中国人最终的思维都是中庸。
+大一的时候，我接受了人与人是不同的。
+大..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangqk8888.github.io">
+        <img src="https://zhangqk8888.github.io/images/avatar.png?v=1739619415746" class="site-logo">
+        <h1 class="site-title">寅 亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhangqk8888" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhang-kun-95-89" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。<br>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+   运行时间：<span id="htmer_time" style="color: red;"></span>
+    </div>
+    <div class="site-footer">
+      
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangqk8888.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">开悟中</h2>
+            <div class="post-date">2021-12-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>我原来在大一觉得自己已经悟出人生的道理，大三的那次冥想让我悟出了新的东西。<br>
+当我大三觉得自己已经透彻人生，最近我又悟出了新的道理。<br>
+当年的粪土激昂，不过是我的一种偏见，可能中国人最终的思维都是中庸。<br>
+大一的时候，我接受了人与人是不同的。<br>
+大三的时候，我能接受别人可以坏可以好。<br>
+而现在我终于明白自己痛苦的根源在于我永远追求完美，接受不了自己不是最好的那个。<br>
+我一直以低姿态伪装地面对世界，但我的内心永远是高傲的俯瞰世界。<br>
+像是和自己炫耀：看啦，这是我所掌握的世界！<br>
+我现在也开始接受自己对善恶的分明交融。<br>
+我原本接受的善恶交融是一种低姿态的伪装，我能接受别人，但内心并不认同，并且还鄙视。<br>
+现在，我觉得自己也是一种普通人，所以接受了自己内心也是善恶交融的普通人。<br>
+好人不可能永远是好人，坏人也不可能永远是坏人<br>
+好人也会办坏事，坏人也可能做好事<br>
+没有太多的那种绝对性分明，有的不过是事件本身。<br>
+这算是一种新的开悟了。</p>
+<p>就像罗翔开B站号时，我是老粉。后续出现争论时，我取关了。我想说的是当时我因为某些因素取关，但现在回头，我明白了。我当时的罗翔老师是那种我放在云端的罗翔，不是实际上生活的罗翔，我还是一个片面化的小孩子，没能把握住真谛。<br>
+所以还是要觉得罗老师的“我们要爱具体的的人，而不是想象中的人”。<br>
+人生得接受自己的平凡，现在亦是！</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangqk8888.github.io/post/ji-lu-yi-ge-ju-zi/">
+                  <h3 class="post-title">
+                    记录一个句子
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'b45ddd1dbf5b31282ae7',
+        clientSecret: 'fe982a8228b1f37b8d0dc6603fa76a2619b4ac6a',
+        repo: 'zhangqk8888.github.io',
+        owner: 'zhangqk8888',
+        admin: ['zhangqk8888'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

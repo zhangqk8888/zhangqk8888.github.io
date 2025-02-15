@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhangqk8888.github.io</id>
+    <title>寅 亮</title>
+    <updated>2025-02-15T11:37:06.120Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhangqk8888.github.io"/>
+    <link rel="self" href="https://zhangqk8888.github.io/atom.xml"/>
+    <subtitle>斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。&lt;br&gt;
+&lt;script&gt;
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second &gt;= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second &gt;= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second &gt;= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second &gt;= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second &gt; 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&gt;
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + &apos;年&apos; + currentTime[1] + &apos;天&apos;
+                + currentTime[2] + &apos;时&apos; + currentTime[3] + &apos;分&apos; + currentTime[4]
+                + &apos;秒&apos;;
+        document.getElementById(&quot;htmer_time&quot;).innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+&lt;/script&gt;
+   运行时间：&lt;span id=&quot;htmer_time&quot; style=&quot;color: red;&quot;&gt;&lt;/span&gt;</subtitle>
+    <logo>https://zhangqk8888.github.io/images/avatar.png</logo>
+    <icon>https://zhangqk8888.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, 寅 亮</rights>
+    <entry>
+        <title type="html"><![CDATA[妙词偶的]]></title>
+        <id>https://zhangqk8888.github.io/post/miao-ci-ou-de/</id>
+        <link href="https://zhangqk8888.github.io/post/miao-ci-ou-de/">
+        </link>
+        <updated>2025-02-15T11:36:05.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有一个非常爱你的老婆是种怎样的体验？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/you-yi-ge-fei-chang-ai-ni-de-lao-po-shi-chong-zen-yang-de-ti-yan-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/you-yi-ge-fei-chang-ai-ni-de-lao-po-shi-chong-zen-yang-de-ti-yan-zhi-hu/">
+        </link>
+        <updated>2024-08-06T13:58:53.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 为什么癸酉本石头记面世后，刘心武再也不研究红楼梦了？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/wei-shi-me-gui-you-ben-shi-tou-ji-mian-shi-hou-liu-xin-wu-zai-ye-bu-yan-jiu-hong-lou-meng-liao-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/wei-shi-me-gui-you-ben-shi-tou-ji-mian-shi-hou-liu-xin-wu-zai-ye-bu-yan-jiu-hong-lou-meng-liao-zhi-hu/">
+        </link>
+        <updated>2024-08-06T13:34:44.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[癸酉本《石头记》极大概率是假的，为什么还会有人愿意相信？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/gui-you-ben-lesslessshi-tou-ji-greatergreater-ji-da-gai-lu-shi-jia-de-wei-shi-me-huan-hui-you-ren-yuan-yi-xiang-xin-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/gui-you-ben-lesslessshi-tou-ji-greatergreater-ji-da-gai-lu-shi-jia-de-wei-shi-me-huan-hui-you-ren-yuan-yi-xiang-xin-zhi-hu/">
+        </link>
+        <updated>2024-08-06T13:34:02.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《红楼梦》的作者真的是曹雪芹吗？ - 知乎]]></title>
+        <id>https://zhangqk8888.github.io/post/lesslesshong-lou-meng-greatergreater-de-zuo-zhe-zhen-de-shi-cao-xue-qin-ma-zhi-hu/</id>
+        <link href="https://zhangqk8888.github.io/post/lesslesshong-lou-meng-greatergreater-de-zuo-zhe-zhen-de-shi-cao-xue-qin-ma-zhi-hu/">
+        </link>
+        <updated>2024-08-06T13:33:16.000Z</updated>
+    </entry>
+</feed>

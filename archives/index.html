@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>文章归档 | 寅 亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangqk8888.github.io/favicon.ico?v=1739619415746">
+<link rel="stylesheet" href="https://zhangqk8888.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。&lt;br&gt;
+&lt;script&gt;
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second &gt;= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second &gt;= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second &gt;= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second &gt;= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second &gt; 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; language=&#34;javascript&#34;&gt;
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + &#39;年&#39; + currentTime[1] + &#39;天&#39;
+                + currentTime[2] + &#39;时&#39; + currentTime[3] + &#39;分&#39; + currentTime[4]
+                + &#39;秒&#39;;
+        document.getElementById(&#34;htmer_time&#34;).innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+&lt;/script&gt;
+   运行时间：&lt;span id=&#34;htmer_time&#34; style=&#34;color: red;&#34;&gt;&lt;/span&gt;">
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangqk8888.github.io">
+        <img src="https://zhangqk8888.github.io/images/avatar.png?v=1739619415746" class="site-logo">
+        <h1 class="site-title">寅 亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhangqk8888" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhang-kun-95-89" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。<br>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+   运行时间：<span id="htmer_time" style="color: red;"></span>
+    </div>
+    <div class="site-footer">
+      
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangqk8888.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+
+          <h2 class="archives-title">文章归档</h2>
+          <div class="archives-container">
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2025</h2>
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/miao-ci-ou-de/">
+                      <h2 class="post-title">
+                        妙词偶的
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2024</h2>
+              
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/you-yi-ge-fei-chang-ai-ni-de-lao-po-shi-chong-zen-yang-de-ti-yan-zhi-hu/">
+                      <h2 class="post-title">
+                        有一个非常爱你的老婆是种怎样的体验？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/wei-shi-me-gui-you-ben-shi-tou-ji-mian-shi-hou-liu-xin-wu-zai-ye-bu-yan-jiu-hong-lou-meng-liao-zhi-hu/">
+                      <h2 class="post-title">
+                         为什么癸酉本石头记面世后，刘心武再也不研究红楼梦了？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/gui-you-ben-lesslessshi-tou-ji-greatergreater-ji-da-gai-lu-shi-jia-de-wei-shi-me-huan-hui-you-ren-yuan-yi-xiang-xin-zhi-hu/">
+                      <h2 class="post-title">
+                        癸酉本《石头记》极大概率是假的，为什么还会有人愿意相信？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/lesslesshong-lou-meng-greatergreater-de-zuo-zhe-zhen-de-shi-cao-xue-qin-ma-zhi-hu/">
+                      <h2 class="post-title">
+                        《红楼梦》的作者真的是曹雪芹吗？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/pian-qian-mai-nian-tao-jie-guo-ba-zi-ji-gei-mai-liao/">
+                      <h2 class="post-title">
+                        骗钱买年套结果把自己给卖了。。
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/qin-ren-qu-shi-shi-yi-chong-shi-me-yang-de-gan-jue-zhi-hu/">
+                      <h2 class="post-title">
+                        亲人去世是一种什么样的感觉？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/du-bo-shi-shi-yi-chong-zen-yang-de-ren-sheng-ti-yan-zhi-hu/">
+                      <h2 class="post-title">
+                        读博士是一种怎样的人生体验？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/happy-new-review-online/">
+                      <h2 class="post-title">
+                        Happy new review online！
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2023</h2>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/you-yi-ge-hao-ma-ma-shi-yi-chong-shi-me-yang-de-ti-yan-zhi-hu/">
+                      <h2 class="post-title">
+                        有一个好妈妈是一种什么样的体验？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/qiong-ke-yi-rang-yi-ge-nan-ren-zi-bei-dao-shi-me-cheng-du-zhi-hu/">
+                      <h2 class="post-title">
+                        穷可以让一个男人自卑到什么程度？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/zhong-nian-nan-ren-zai-xiang-shi-me-zhi-hu/">
+                      <h2 class="post-title">
+                         中年男人在想什么？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/lesslessxu-gou-zhi-shu-greatergreater-zhi-hu/">
+                      <h2 class="post-title">
+                        《虚构之书》 - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/zhe-shan-jian-de-shui-shi-gu-di-de-tian/">
+                      <h2 class="post-title">
+                        这山间的水，是谷底的天
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/jie-ceng-kua-yue-zhi-hu/">
+                      <h2 class="post-title">
+                        阶层跨越 - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/yi-la-ke-lao-bai-xing-hen-bu-hen-mei-guo-zhi-hu/">
+                      <h2 class="post-title">
+                        伊拉克老百姓恨不恨美国? - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/ni-zai-xue-xiao-qi-jian-yin-he-shi-yi-ju-cheng-ming-quan-xiao-jie-zhi-zhi-hu/">
+                      <h2 class="post-title">
+                        你在学校期间因何事一举成名全校皆知？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/ren-lei-de-qi-yuan-yi-zhi-shi-yi-ge-mi-ren-lei-dao-di-shi-di-qiu-zi-shen-de-chan-wu-huan-shi-lai-zi-yu-wai-xing-sheng-wu-zhi-hu/">
+                      <h2 class="post-title">
+                        人类的起源一直是一个迷，人类到底是地球自身的产物，还是来自于外星生物？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/xiang-shou-gu-du-gu-du-yong-heng/">
+                      <h2 class="post-title">
+                        享受孤独，孤独永恒！
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2022</h2>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/suo-si/">
+                      <h2 class="post-title">
+                        所思
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/pin-jian-fu-qi-bai-shi-ai/">
+                      <h2 class="post-title">
+                        贫贱夫妻百事哀
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/ni-shen-bian-you-na-xie-shen-ren-zhi-hu/">
+                      <h2 class="post-title">
+                        你身边有哪些神人？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/shao-nian-shi-an-lian-de-ren-zai-ci-jian-mian-huan-hui-xin-dong-ma-zhi-hu/">
+                      <h2 class="post-title">
+                         少年时暗恋的人再次见面还会心动吗？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/peng-jia-mu-he-shuang-yu-yu-pei-shi-jian-xiang-xi-fen-xi-zhi-hu/">
+                      <h2 class="post-title">
+                        彭加木和双鱼玉佩事件详细分析 - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/nu-sheng-xiang-yao-yi-ge-ti-mian-de-hun-li-you-cuo-ma-zhi-hu/">
+                      <h2 class="post-title">
+                        女生想要一个体面的婚礼有错吗？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/ben-ke-shuo-shi-bo-shi-de-qu-bie/">
+                      <h2 class="post-title">
+                        本科、硕士、博士的区别
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/nan-peng-you-ba-wo-gei-ta-mai-de-sheng-ri-dan-gao-de-nai-you-gua-gan-jing-liao-rang-wo-chi-sheng-xia-de-dan-gao-pi-wo-gai-sheng-qi-ma-zhi-hu/">
+                      <h2 class="post-title">
+                        男朋友把我给他买的生日蛋糕的奶油刮干净了，让我吃剩下的蛋糕坯，我该生气吗？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/da-bu-fen-nu-sheng-du-bu-yuan-yi-zhao-cheng-xu-yuan-dang-nan-peng-you-de-ma-zhi-hu/">
+                      <h2 class="post-title">
+                        大部分女生都不愿意找程序员当男朋友的吗？ - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/xiang-chu-guo-da-gong-shui-you-zheng-gui-qu-dao-zhi-hu/">
+                      <h2 class="post-title">
+                        想出国打工，谁有正规渠道? - 知乎
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zhangqk8888.github.io/post/chong-yao-ren-wu-yi-ge-dian-hua-zhen-de-neng-rang-hang-ban-yan-chi-qi-fei-ma/">
+                      <h2 class="post-title">
+                        重要人物一个电话真的能让航班延迟起飞吗？
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+            
+          </div>
+
+          <div class="pagination-container">
+  
+  
+    <a href="https://zhangqk8888.github.io/archives/page/2" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

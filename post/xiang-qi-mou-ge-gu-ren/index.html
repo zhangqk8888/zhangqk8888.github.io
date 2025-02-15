@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>想起某个故人 | 寅 亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangqk8888.github.io/favicon.ico?v=1739619415746">
+<link rel="stylesheet" href="https://zhangqk8888.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="或许是 身于深山不自知
+虽然现在的我变成了小朋友得喊我“叔叔”的年纪，但当年的我还是一个胶原蛋白贼多的正太。
+为啥这样得细说。因为家里缘故，我5岁上学，比同年级的学生至少低一岁。小男孩低年级时基本上小的很，所以我个子没有同伴高。而且小孩么，..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangqk8888.github.io">
+        <img src="https://zhangqk8888.github.io/images/avatar.png?v=1739619415746" class="site-logo">
+        <h1 class="site-title">寅 亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhangqk8888" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhang-kun-95-89" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。<br>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+   运行时间：<span id="htmer_time" style="color: red;"></span>
+    </div>
+    <div class="site-footer">
+      
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangqk8888.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">想起某个故人</h2>
+            <div class="post-date">2021-10-04</div>
+            
+            <div class="post-content" v-pre>
+              <p>或许是 身于深山不自知</p>
+<p>虽然现在的我变成了小朋友得喊我“叔叔”的年纪，但当年的我还是一个胶原蛋白贼多的正太。</p>
+<p>为啥这样得细说。因为家里缘故，我5岁上学，比同年级的学生至少低一岁。小男孩低年级时基本上小的很，所以我个子没有同伴高。而且小孩么，是一个爱热闹，俗语“狗都嫌弃”的年纪。所以，基本上和同年级学生玩乐都会被“暴力”推搡，然后我就很没骨气得哭。这样就导致我不喜欢出去玩，喜欢在教室里坐着。</p>
+<p>这是故事的前提</p>
+<p>故事就是这么开始的。而后女孩称作H吧，因为我也忘记了她的名字。</p>
+<p>因为我总是下课时呆在教室，而且输了会哭。小时候下课后的教室基本上是女生的天地，女生有时候需要帮忙时都去帮个忙。结果呢，一来二去，和一位女生玩得比较好。我是单纯觉得这种”游戏体验感高“，”游戏氛围好“，”肢体动作幅度小“。而且我年纪差一岁，个子偏矮，她也是一位“偏矮”的小美女。这样我和H同桌，而且好几年。</p>
+<p>随后，因为玩的特别好，所以基本上属于”有求必应“。而那个年纪也是少男少女”性别歧视“高涨的年纪，所以我和她被大家开始磕CP。但是真觉得就是找了个符合自己的玩伴罢了。</p>
+<p>和她玩过过家家，跳房子，翻花绳……很多都是她介绍并交给我的。而我也是玩得“开开心心”。而后班级里就开始瞎传，说什么</p>
+<p>“我喜欢她”</p>
+<p>“她喜欢我”</p>
+<p>“两人互相喜欢”</p>
+<p>“父母都知道”</p>
+<p>…………</p>
+<p>喵喵喵，我咋不知道？</p>
+<p>她表示“无所谓”，“随它去，反正谣言还是谣言”</p>
+<p>我当时就钦佩，大城市回来的就是不一样。（她从小在江苏长大，小学期间她爸回家工作，顺便把她转学到这个村小）</p>
+<p>人家都这样，那咱也就这样“随它去吧”。</p>
+<p>而后传得更离谱，老师都知道。当时的数学老师特别喜欢我，还偷偷地问我是不是喜欢H小姑娘。我就悲愤：老师啊，我两就是个小屁孩，只是关系好而已，而且我和小姑娘的岁数加起来翻一倍都没老师的年纪大。我觉得老师就是单纯地想逗我玩！</p>
+<p>之后，因为天天和女生呆在一块，导致我也带着喜欢认真听课，认真写作业。我成绩也没啥大问题。平时老师上黑板点名，只要点到某个人不会，就会把脸偏向另一位，然后“蜜汁姨母笑”。</p>
+<p>要是按照童话的结局，就是我和她一起上初中，高中……</p>
+<p>可现实是，我四年级那年依仗自己学习好，玩了一学期。从前三玩到了倒十，这样我被老爸转学去镇上。而她，等到初中和原来小学的同学提及H，他们说我转学后她发现我不在，她也随着老爸回江苏了。（当时我是开学报名那天被转走，老爸直接带我去新学校，而旧学校的大门也没能进去）</p>
+<p>直到初中时，同学们问我和H多久联系一次时，我还和原来的玩伴解释我真不知道她去哪里了。而且同学还说当时H和某个闺蜜（当年好像都没这个名词）说喜欢我，可我当时并不知道。只是觉得有个玩得不错的玩伴。或许是“身于深山不自知”吧。</p>
+<p>记忆里，她身着纱质的蓬蓬裙，一抹马尾走起路来一颠一颠的，胸前挂着一个半个手机大的白釉玉壶（如下图），脸上永远挂着甜甜的笑容，“咯咯咯”永远伴随她。她的面容因为太久，已经开始模糊。并且至今我也没能再次见到她，我迟疑地发现我已经忘记了她的名字，彷佛现实里压根没存在这抹痕迹。</p>
+<p>可记忆并没有说谎，只是身于深山不自知吧。[1]</p>
+<p>参考<br>
+^记忆已经过去10多年了，记忆也逐渐模糊了。虽然不知她身处何地，但希望她还能保持当年的那种干脆利索。<br>
+发布于刚刚</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangqk8888.github.io/post/yi-chang-meng-jing/">
+                  <h3 class="post-title">
+                    异常梦境
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'b45ddd1dbf5b31282ae7',
+        clientSecret: 'fe982a8228b1f37b8d0dc6603fa76a2619b4ac6a',
+        repo: 'zhangqk8888.github.io',
+        owner: 'zhangqk8888',
+        admin: ['zhangqk8888'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

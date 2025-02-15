@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>入校小记 | 寅 亮</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zhangqk8888.github.io/favicon.ico?v=1739619415746">
+<link rel="stylesheet" href="https://zhangqk8888.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="时为九月，已过七月流火的时机。可我往南行约千里，周遭还是闷热的时节。
+现已开学约一周，动笔写下自己如今的部分感受。
+实际上当时于四月的复试结束时，在好友的带领下，已大部分游览了学校周遭。先说总体，SMU比我本科院校大不了多少，虽然我没来之前..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhangqk8888.github.io">
+        <img src="https://zhangqk8888.github.io/images/avatar.png?v=1739619415746" class="site-logo">
+        <h1 class="site-title">寅 亮</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/zhangqk8888" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhang-kun-95-89" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      斜风细雨入京门，衣裳风尘杂酒痕。半生疏狂半生笑，前世本是说书人。<br>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2021, 1, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+   运行时间：<span id="htmer_time" style="color: red;"></span>
+    </div>
+    <div class="site-footer">
+      
+Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhangqk8888.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">入校小记</h2>
+            <div class="post-date">2021-09-08</div>
+            
+            <div class="post-content" v-pre>
+              <p>时为九月，已过七月流火的时机。可我往南行约千里，周遭还是闷热的时节。<br>
+现已开学约一周，动笔写下自己如今的部分感受。<br>
+实际上当时于四月的复试结束时，在好友的带领下，已大部分游览了学校周遭。先说总体，SMU比我本科院校大不了多少，虽然我没来之前以为它像地图所示的那样“庞大”。现在疫情期间，学校为了方便管理，把大部分校区分割成一块块的封闭区域以减少人员的随意流动。一层层的进入，总有一种自己在入宫时各种倒换通牒的情形。譬如从它的附属医院时检查你的健康码来限制人员随意流动，在教学和医院的分割线上再次限制只有通行证的人允许进入，在转盘地区再次限制，防止施工工人和学生混杂，最后在学校的核心入口再次核查健康码和学生证。一通繁琐的通关程序，颇有进宫的流程。<br>
+9月3号，我和杰哥4点打的搭航班前往广州，后转地铁去学校。因为第一次乘坐飞机，两个小时的飞机，我几乎全程瞅着窗外。后来还拿空乘发放的矿泉水当简易水平仪来检测飞机转向时的水平位置。因为我发现飞机在空中飞行时，前高后低，人在其中无法准确判断自己的水平位置。这是我第一次的飞机经历，除了说出的这几件事，还有部分乌龙事件，以后可能也会在我的记忆库里多了几场尴尬的片段。<br>
+老哥在我还在地铁上就开始出南门接我。虽然我说不必麻烦，但在马路对面收到他“我看到你了”的电话并向我挥手时，心里觉得温暖。老哥多是我的人生导师，现在也是师兄了。哈哈哈哈哈，，，，，<br>
+穿附院，经南门，转核心区。20多分钟的步行才到校区，我和杰哥去报道，中间也发生了几件闹笑话的事情。老哥送我到宿舍，稍事整理，恰逢其女友CY下班，四人去食堂边吃边聊了许多这些时间的故事。中间颇有感慨，没老哥的指引，估计我现在还在家乡里县医院呆着。噫嘘唏！<br>
+……中间还发生了太多的故事。而我现在在SMU的图书馆里敲键盘写下这段文字，却想到了当年第一次看《肖申克的救赎》。主人翁最后身着干净的衣服，驾驶汽车走在环海公路奔向自己的自由。恰如我现在回首当初调剂那一个月的痛苦，吃不下睡不着，周遭的冷漠和奚落。<br>
+我想说，这半年我这约莫两纪时光里最痛苦的回忆，亦是最幸福的回忆。时光荏苒，希望我能在三年后，回看这篇文字，还能有现在的感触！就像那句话说的，“愿你出走半生，仍是少年”！<br>
+你好，ZQK，再会！</p>
+<h2 id="辛丑年丁酉月己未日书于羊城">*辛丑年丁酉月己未日书于羊城   *</h2>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhangqk8888.github.io/post/ji-lu/">
+                  <h3 class="post-title">
+                    记录
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'b45ddd1dbf5b31282ae7',
+        clientSecret: 'fe982a8228b1f37b8d0dc6603fa76a2619b4ac6a',
+        repo: 'zhangqk8888.github.io',
+        owner: 'zhangqk8888',
+        admin: ['zhangqk8888'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
